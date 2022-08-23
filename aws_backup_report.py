@@ -1,9 +1,11 @@
 import boto3, logging, os
 
 def aws_backup_report():
+    date = "2022-08-21"
+    status = "FAILED"
     regions = ["us-east-1", "sa-east-1"]
     for region in regions:
-        os.system('aws backup list-backup-jobs --region '+region+' --output yaml --query "BackupJobs[*].{AccountId:AccountId,BackupJobId:BackupJobId,StartBy:StartBy,State:State,StatusMessage:StatusMessage,ResourceArn:ResourceArn}"')
+        os.system('aws backup list-backup-jobs --region '+region+' --by-state '+status+' --by-created-afte '+date+' --output yaml --query "BackupJobs[*].{AccountId:AccountId,BackupJobId:BackupJobId,StartBy:StartBy,State:State,StatusMessage:StatusMessage,ResourceArn:ResourceArn}"')
 
 
 def sts_session(accountid):
