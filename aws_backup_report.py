@@ -10,7 +10,7 @@ def aws_backup_report():
 
 def sts_session(accountid):
 
-    role_list = ["AWSCloudFormationStackSetExecutionRole","AWSControlTowerExecution","stacksets-exec-46288c5824f5abf8b0d0317def1b12e5"]
+    role_list = ["","",""]
     
     for role in role_list:
 
