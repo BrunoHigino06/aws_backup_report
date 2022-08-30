@@ -1,16 +1,16 @@
 import boto3, logging, os
 
 def aws_backup_report():
-    date = "2022-08-21"
+    date = "2022-08-28"
     status = "FAILED"
     regions = ["us-east-1", "sa-east-1"]
     for region in regions:
-        os.system('aws backup list-backup-jobs --region '+region+' --by-state '+status+' --by-created-afte '+date+' --output yaml --query "BackupJobs[*].{AccountId:AccountId,BackupJobId:BackupJobId,StartBy:StartBy,State:State,StatusMessage:StatusMessage,ResourceArn:ResourceArn}"')
+        os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output yaml --query "BackupJobs[*].{AccountId:AccountId,BackupJobId:BackupJobId,StartBy:StartBy,State:State,StatusMessage:StatusMessage,ResourceArn:ResourceArn}"')
 
 
 def sts_session(accountid):
 
-    role_list = ["","",""]
+    role_list = ["AWSCloudFormationStackSetExecutionRole","AWSControlTowerExecution","stacksets-exec-46288c5824f5abf8b0d0317def1b12e5"]
     
     for role in role_list:
 
