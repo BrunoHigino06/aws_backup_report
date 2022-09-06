@@ -8,7 +8,6 @@ def aws_backup_report():
         brute_data = os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output json --query "BackupJobs[*].{AccountId:AccountId,BackupJobId:BackupJobId,StartBy:StartBy,State:State,StatusMessage:StatusMessage,ResourceArn:ResourceArn}"')
         json_data = json.dumps(brute_data, indent=4, sort_keys=True, default=str)
         refined_data = json.loads(json_data)
-        for accountid in refined_data['AccountId']:
-            print(accountid['AccountId'])
+        print(refined_data)
 
 aws_backup_report()
