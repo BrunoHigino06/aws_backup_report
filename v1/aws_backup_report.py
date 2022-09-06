@@ -6,7 +6,7 @@ def aws_backup_report():
     regions = ["sa-east-1"]
     for region in regions:
         accountId = os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output text --query "BackupJobs[*].{AccountId:AccountId}"')
-        for accountname in len(accountId):
+        for accountname in str(accountId):
             print('test: '+accountname)
 
 aws_backup_report()
