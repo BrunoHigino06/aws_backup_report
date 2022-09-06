@@ -5,9 +5,20 @@ def aws_backup_report():
     status = "FAILED"
     regions = ["sa-east-1"]
     for region in regions:
-        brute_data = os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output text --query "BackupJobs[*].{AccountId:AccountId}"')
-        json_data = json.dumps(brute_data, indent=4, sort_keys=True, default=str)
-        refined_data = json.loads(json_data)
-        print(refined_data)
+        accountId = os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output text --query "BackupJobs[*].{AccountId:AccountId}"')
+        for accountname in accountId:
+
+            organizations = boto3.client('organizations')
+
+            org_response = organizations.describe_account(
+            AccountId=accountId
+            )
+
+            org_json = json.dumps(org_response, indent=4, sort_keys=True, default=str)
+
+            org_database = json.loads(org_json)
+
+            accountname = org_database['Account']['Name']
+            print(accountname)
 
 aws_backup_report()
