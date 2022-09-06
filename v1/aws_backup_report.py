@@ -1,12 +1,8 @@
 import boto3, json, os
 
 def aws_backup_report():
-    date = "2022-09-05"
+    date = "2022-08-28"
     status = "FAILED"
-    regions = ["sa-east-1"]
+    regions = ["us-east-1", "sa-east-1"]
     for region in regions:
-        accountId = os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output text --query "BackupJobs[*].{AccountId:AccountId}"')
-        for accountname in str(accountId):
-            print('test: '+accountname)
-
-aws_backup_report()
+        os.system('aws backup list-backup-jobs --region '+region+' --by-created-afte '+date+' --output json --query "BackupJobs[*].{AccountId:AccountId,BackupJobId:BackupJobId,StartBy:StartBy,State:State,StatusMessage:StatusMessage,ResourceArn:ResourceArn}"')

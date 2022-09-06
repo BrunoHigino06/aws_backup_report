@@ -1,0 +1,180 @@
+{
+    "BackupJobs": [
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "F35F0434-59A4-E1B2-3FF3-C32679EB7854",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao/backup/01662339600000-9162defc",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao",
+            "CreationDate": "2022-09-05T01:00:00+00:00",
+            "CompletionDate": "2022-09-05T04:00:10.760000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 10884324538,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-09-05T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "0B3E1033-14AD-DEAC-5A26-35F60187B33E",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado/backup/01662339600000-547ef0d2",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado",
+            "CreationDate": "2022-09-05T01:00:00+00:00",
+            "CompletionDate": "2022-09-05T04:35:04.131000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 61045020,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-09-05T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "1226059C-D5EA-E26B-C774-7E2A71B03ED8",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado/backup/01661734800000-9f131ad5",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado",
+            "CreationDate": "2022-08-29T01:00:00+00:00",
+            "CompletionDate": "2022-08-29T04:35:18.662000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 61038829,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-08-29T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "F291F878-4FEC-4AB0-8255-E3CC29A9845C",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao/backup/01661734800000-06381a67",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao",
+            "CreationDate": "2022-08-29T01:00:00+00:00",
+            "CompletionDate": "2022-08-29T03:55:31.563000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 10182344312,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-08-29T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "BA03D1E0-EEB3-5AB2-1F1F-52A67C3FB375",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado/backup/01661130000000-d65780cc",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado",
+            "CreationDate": "2022-08-22T01:00:00+00:00",
+            "CompletionDate": "2022-08-22T04:32:40.082000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 61036466,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-08-22T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "173F3215-65EB-883F-6666-E0327AC8404B",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao/backup/01661130000000-d175b4d4",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao",
+            "CreationDate": "2022-08-22T01:00:00+00:00",
+            "CompletionDate": "2022-08-22T03:54:36.273000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 10182344312,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-08-22T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "4B7C11AC-7452-607F-A62A-BB3F216D346D",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado/backup/01660525200000-406142c8",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/PrecoPreAprovado",
+            "CreationDate": "2022-08-15T01:00:00+00:00",
+            "CompletionDate": "2022-08-15T04:39:56.008000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 61036466,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-08-15T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        },
+        {
+            "AccountId": "128119258815",
+            "BackupJobId": "6CB4F3F5-93B9-7D4A-120D-28FA11C3F1ED",
+            "BackupVaultName": "database-S3",
+            "BackupVaultArn": "arn:aws:backup:sa-east-1:128119258815:backup-vault:database-S3",
+            "RecoveryPointArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao/backup/01660525200000-2df5b9ce",
+            "ResourceArn": "arn:aws:dynamodb:sa-east-1:128119258815:table/parametroNegociacao",
+            "CreationDate": "2022-08-15T01:00:00+00:00",
+            "CompletionDate": "2022-08-15T04:03:13.076000+00:00",
+            "State": "COMPLETED",
+            "PercentDone": "100.0",
+            "BackupSizeInBytes": 10182344312,
+            "IamRoleArn": "arn:aws:iam::128119258815:role/service-role/AWSBackupDefaultServiceRole",
+            "CreatedBy": {
+                "BackupPlanId": "239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanArn": "arn:aws:backup:sa-east-1:128119258815:backup-plan:239275ff-7c7e-4b30-aa1d-e1af879b28ad",
+                "BackupPlanVersion": "OTQ0Y2EyNWMtMTgzNy00YTY0LWI4N2QtMDFlYTkzZDIyODdm",
+                "BackupRuleId": "c689bbf5-7683-440b-8897-b7e1b279a9d6"
+            },
+            "StartBy": "2022-08-15T09:00:00+00:00",
+            "ResourceType": "DynamoDB"
+        }
+    ]
+}
