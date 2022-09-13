@@ -1,4 +1,4 @@
-import json
+import json, boto3
 
 def report_generate():
     with open('./data.json') as json_file:
