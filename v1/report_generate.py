@@ -28,6 +28,9 @@ def report_generate():
             #Colect the Resource arn
             resourcearn = information['ResourceArn']
 
+            #Colect the state
+            state = information['State']
+
             #Colect the Resource Name
             if resourcetype == 'DynamoDB':
                 tablename = resourcearn[46:]
