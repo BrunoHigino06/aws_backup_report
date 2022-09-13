@@ -31,11 +31,14 @@ def report_generate():
             #Colect the state
             state = information['State']
 
+            #Colect the Status Message
+            statusmessage = information['StatusMessage']
+
             #Colect the Resource Name
             if resourcetype == 'DynamoDB':
                 tablename = resourcearn[46:]
 
-                print(id+','+accountname+','+startdate+','+resourcetype+','+resourcearn+','+tablename)
+                print(id+','+accountname+','+startdate+','+resourcetype+','+resourcearn+','+tablename+','+state+','+statusmessage)
 
 
 
