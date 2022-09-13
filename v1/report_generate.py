@@ -1,7 +1,7 @@
 import json, boto3
 
 def report_generate():
-    print('AccountId,Account Name,Date')
+    print('AccountId,Account Name,Date,Resource type,Resource arn, Resource Name, State, Status Message')
     with open('./data.json') as json_file:
         database = json.load(json_file)
 
@@ -20,9 +20,19 @@ def report_generate():
             accountname = org_database['Account']['Name']
 
             #Colect the start date
-            startdate = information['CreationDate']
+            startdate = information['StartBy']
 
-            print(id+','+accountname+','+startdate)
+            #Colect the Resource type
+            resourcetype = information['ResourceArn']
+
+            #Colect the Resource arn
+            resourcearn = information['ResourceArn']
+
+            #Colect the Resource Name
+            if resourcetype == 'DynamoDB':
+                tablename = resourcearn[46:]
+
+                print(id+','+accountname+','+startdate+','+resourcetype+','+resourcearn+','+tablename)
 
 
 
