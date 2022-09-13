@@ -35,8 +35,8 @@ def report_generate():
             try:
                 statusmessage = information['StatusMessage']
             except:
-                statusmessage = ''
-                  
+                statusmessage = 'test'
+
             #Colect the Resource Name
             if resourcetype == 'DynamoDB':
                 tablename = resourcearn[46:]
