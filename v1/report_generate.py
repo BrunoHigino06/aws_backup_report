@@ -36,6 +36,7 @@ def report_generate():
                 statusmessage = information['StatusMessage']
             except:
                 statusmessage = 'test'
+                print(statusmessage)
 
             #Colect the Resource Name
             if resourcetype == 'DynamoDB':
