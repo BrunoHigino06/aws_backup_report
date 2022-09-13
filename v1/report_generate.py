@@ -1,12 +1,13 @@
 import json, boto3
 
 def report_generate():
+    print('AccountId,Account Name,Date')
     with open('./data.json') as json_file:
         database = json.load(json_file)
 
-        for AccountId in database['BackupJobs']:
+        for information in database['BackupJobs']:
 
-            id = AccountId['AccountId']
+            id = information['AccountId']
             organizations = boto3.client('organizations')
             org_response = organizations.describe_account(
                 AccountId=id
@@ -15,9 +16,15 @@ def report_generate():
 
             org_database = json.loads(org_json)
 
+            #Colect account name
             accountname = org_database['Account']['Name']
 
-            print(accountname)
+            #Colect the start date
+            startdate = information['CreationDate']
+
+            print(id+','+accountname+','+startdate)
+
+
 
 
 
